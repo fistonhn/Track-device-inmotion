@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Workout</title>
+        <script src="control.js"></script>  
+        <script src="script.js"></script>
+        <style>
+            body .header {
+                text-align:center;
+            }
+            .header input {
+                width:40px;
+                text-align:center;
+            }
+            #target {
+                position:absolute;
+                z-index:998;
+                width:100px;
+                height:100px;
+                left:50vw;
+                margin-left:-350px;
+                top:50vh;
+                margin-top:-200px;
+                background-color:red;
+                border:1px solid black;
+                transition:0.2s all ease-out;
+                -webkit-transition:0.2s all ease-out;
+            }
+            #controlPanel {
+                background-color:white;
+                padding:5px;
+                position:absolute;
+                z-index:999;
+                top:50px;
+                right:50px;
+                width:100px;
+                border:3px solid grey;          
+            }
+            #controlPanel div {
+                margin:5px 0;
+                text-align:center;
+            }
+            #controlPanel > button:first-of-type {
+                margin:auto;
+                display:block;
+            }
+            #controlPanel > button:last-of-type {
+                margin:auto;
+                display:block;
+            }
+
+
+
+
+
+
+            body .header2 {
+                text-align:center;
+            }
+            .header2 input {
+                margin-bottom: 80px;
+                width: 40px;
+                text-align:center;
+            }
+            .objB{
+                margin-top: 200px;
+            }
+            #target2 {
+                position:absolute;
+                z-index:998;
+                width:100px;
+                height:100px;
+                left:50vw;
+                margin-left:-350px;
+                top:50vh;
+                margin-top:-50px;
+                background-color:blue;
+                border:1px solid black;
+                transition:0.2s all ease-out;
+                -webkit-transition:0.2s all ease-out;
+            }
+            #controlPanel2 {
+                background-color:white;
+                padding:5px;
+                position:absolute;
+                z-index:999;
+                bottom:50px;
+                right:50px;
+                width:100px;
+                border:3px solid grey;          
+            }
+            #controlPanel2 div {
+                margin:5px 0;
+                text-align:center;
+            }
+            #controlPanel2 > button:first-of-type {
+                margin:auto;
+                display:block;
+            }
+            #controlPanel2 > button:last-of-type {
+                margin:auto;
+                display:block;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <!-- object A -->
+
+        <div class="objA">
+            <h1>Device A</h1>
+            <h1>Device A</h1>
+
+            <h3>Notication A: <span id="messageA"></span></h3>
+            <h3 >Distance A: <span id="locationA"></span></h3> 
+            <h3>Color2: RED</h3>
+            <span>speed in px: </span>
+            <input value="10" id="value">
+        </div>
+        <div class="header">
+
+            <div id="controlPanel">
+                <button class="button" >Up</button>
+                <div>
+                    <button class="button" >Left</button>
+                    <button class="button" >Right</button>
+                </div>
+                <button class="button" >Down</button>
+            </div>
+        </div>
+        <div id="target"></div>
+
+
+        <!-- object B -->
+
+        <div class="objB">
+            <h1>Device B</h1>
+
+            <h3>Notication B: <span id="messageB"></span></h3>
+            <h3>Distance coardination of B: <span id="locationB"></span></h3>
+            <h3>Total distance covered by Divice B: <span id="distanceB"></span></h3>
+            <h3>Color2: BLUE</h3>
+            <span>speed in px: </span>
+            <input value="10" id="value2">
+        </div>
+
+        <div class="header2">
+            
+            <div id="controlPanel2">
+                <button class="button2" >Up</button>
+                <div>
+                    <button class="button2" >Left</button>
+                    <button class="button2" >Right</button>
+                </div>
+                <button class="button2" >Down</button>
+            </div>
+
+
+        </div>
+        <div id="target2"></div>
+
+        
+    </body>
+</html>
